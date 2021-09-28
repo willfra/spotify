@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,14 @@
     <title>Projeto Spotify</title>
     <link rel="stylesheet" href="./main.css">
 </head>
-<body>
-    <header>
 
-    </header>
+<body>
     <aside class="menu-lateral">
         <div class="logo">
             <img src="./img/willtofy logo copiar.png" alt="">
         </div>
         <ul class="menu1 menu-lateral_menu">
-            <li class="menu_li"><i class="fas fa-home"></i> Início</li>
+            <li id="menu_li" class="menu_li"><i class="fas fa-home"></i> Início</li>
             <li class="menu_li"><i class="fas fa-search"></i> Buscar</li>
             <li class="menu_li"><i class="fas fa-bookmark"></i> Sua Biblioteca</li>
         </ul>
@@ -25,23 +24,24 @@
             <li class="menu_li"><i class="fas fa-heart"></i> Músicas Curtidas</li>
             <li class="menu_li"><i class="fas fa-podcast"></i> Seus episódios</li>
         </ul>
+        <hr class="menu-lateral_divisao">
         <ul class="menu3 menu-lateral_menu">
-            <li class="li_playlists">Playlist </li>
-            <li class="li_playlists">Playlist 2</li>
-            <li class="li_playlists">Playlist 3</li>
-            <li class="li_playlists">Playlist 4</li>
-            <li class="li_playlists">Playlist 5</li>
-            <li class="li_playlists">Playlist 6</li>
-            <li class="li_playlists">Playlist 7</li>
-            <li class="li_playlists">Playlist 8</li>
-            <li class="li_playlists">Playlist 9</li>
-            <li class="li_playlists">Playlist 10</li>
-            <li class="li_playlists">Playlist 11</li>
-            <li class="li_playlists">Playlist 12</li>
-            <li class="li_playlists">Playlist 13</li>
-            <li class="li_playlists">Playlist 14</li>
-            <li class="li_playlists">Playlist 15</li>
-            <li class="li_playlists">Playlist 16</li>
+            <li class="li_playlists">Lofi Fuits Music 🍉</li>
+            <li class="li_playlists">Minha playlist </li>
+            <li class="li_playlists">Boa vibe</li>
+            <li class="li_playlists">Casamento</li>
+            <li class="li_playlists">Guardioes da Galaxia</li>
+            <li class="li_playlists">Theowback Party</li>
+            <li class="li_playlists">Brisa</li>
+            <li class="li_playlists">Maiores Clássicos Brasileiros</li>
+            <li class="li_playlists">Top Brasil</li>
+            <li class="li_playlists">Dubai - Solberjum</li>
+            <li class="li_playlists">Boas pra...</li>
+            <li class="li_playlists">Curtidas na rádio</li>
+            <li class="li_playlists">Mix de San Joet</li>
+            <li class="li_playlists">Foco no estudo</li>
+            <li class="li_playlists">Motivação</li>
+            <li class="li_playlists">Hits da Internet</li>
             <li class="li_playlists">Playlist 17</li>
             <li class="li_playlists">Playlist 18</li>
             <li class="li_playlists">Playlist 19</li>
@@ -68,14 +68,55 @@
             <li class="li_playlists">Playlist 40</li>
             <li class="li_playlists">Playlist 41</li>
             <li class="li_playlists">Playlist 42</li>
-
-
-
-    
         </ul>
-            <div class="install-app">
-                <span>Instalar aplicativo</span>
-            </div>
+        <div class="install-app">
+            <i class="far fa-arrow-alt-circle-down"></i>
+            <span></i> Instalar aplicativo</span>
+        </div>
     </aside>
+    <div class="player">
+        <div class="box_musica-atual">
+            <div class="capa_musica box_player">
+                <div class="capa_button"><i class="far fa-arrow-alt-circle-up"></i></div>
+                <img src="./img/capa_album_musica_atual.jpg" alt="" />
+            </div>
+            <div class="info_musica">
+                <div class="titulo_musica">Bongo Cha</div>
+                <div class="autor_musica">Googdboys</div>
+            </div>
+
+            <div class="musica-curtida_icon box_player"><i class="fas fa-heart"></i></div>
+        </div>
+        <div class="box_player_buttons-center">
+            <div class="buttons-center_1">
+                <div class="button_player button_random"><i class="fas fa-random"></i></div>
+                <div class="button_player button_previous"><i class="fas fa-step-forward"></i></div>
+                <div class="button_player button_play_pause"><i class="fas fa-play-circle"><i
+                            class="fas fa-pause-circle"></i></i></div>
+                <div class="button_player button_next"><i class="fas fa-step-forward"></i></div>
+                <div class="button_player button_repeat"><i class="fas fa-redo-alt"></i></div>
+            </div>
+            <div class="buttons-center_2">
+                <div class="status_music">0:40</div>
+                <div class="progress_mark">
+                    <div class="progress_status"></div>
+                </div>
+                <div class="status_music_end">3:00</div>
+            </div>
+        </div>
+        <div class="box_player_buttons-right">
+            <div class="button_letters button_player2"><i class="fas fa-closed-captioning"></i></div>
+            <div class="button_playlist_atual button_player2"><i class="fas fa-list"></i></div>
+            <div class="button_dispositivos button_player2"><i class="fas fa-desktop"></i></div>
+            <div class="player_volume ">
+                <div class="button_volume button_player2"><i class="fas fa-volume-up"></i></div>
+                <div class="volume_mark">
+                    <div class="volume_status"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
 </body>
+
 </html>
