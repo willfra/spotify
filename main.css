@@ -27,6 +27,8 @@ body {
   font-family: var(--font-geral);
   font-weight: var(--font-tertiary);
   color: var(--branco);
+  overflow: unset;
+  
 }
 /*------------------- MENU-LATERAL -------------------*/
 .menu-lateral {
@@ -398,6 +400,7 @@ body {
     rgba(47, 0, 255, 0.336) 12%,
     rgb(19, 19, 19) 52%
   );
+  overflow: scroll;
 }
 .sessao_titulo_pagina {
   padding: 25px 40px;
