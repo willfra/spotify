@@ -1,0 +1,104 @@
+@import url(./css/spotify-web.css);
+@import url(./css/global.css);
+@import url(./css/responsive.css);
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;500;800&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+:root {
+    --font-geral: 'Merriweather', sans-serif;
+    --font-primary: 900;
+    --font-secondary: 600;
+    --font-tertiary: 300;
+}
+section {
+
+}
+body {
+    background-color: var(--background-base);
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    font-family: var(--font-geral);
+    font-weight: var(--font-tertiary);
+    color: white;
+
+}
+.menu-lateral {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 0;
+    padding: 25px 10px;
+    flex: 1;
+    cursor: default;
+    z-index: 3;
+    position: relative;
+    max-width: 245px;
+
+}
+.logo {
+    width: 141px;
+    height: 50px;
+    position: relative;
+    margin: ;
+    padding: 0 25px;
+    margin-bottom: 25px;
+}
+.logo img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.menu-lateral_menu {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(221, 221, 221);
+    font-size: .9rem;
+    transition: all .5s;
+}
+.menu-lateral_menu li:hover {
+    color: var(--essential-bright-accent);
+    transition: .3s;
+}
+
+.menu1 {
+
+}
+.menu2 {
+
+}
+.menu3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+
+}
+.menu_li {
+    padding: 5PX 15px;
+    display: flex;
+    align-items: center;
+
+}
+.menu_li i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+.fa-heart, .fa-home, .fa-search{
+    font-size: 1.4rem !important;
+}
+.li_playlists {
+    padding: 4px 15px;
+}
+.menu3 li {
+    cursor: pointer;
+}
