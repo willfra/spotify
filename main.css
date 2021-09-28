@@ -47,8 +47,8 @@ body {
   width: 141px;
   height: 50px;
   position: relative;
-  margin: ;
-  padding: 0 25px;
+  padding: 0 40px;
+  right: 30px;
   margin-bottom: 25px;
   cursor: pointer;
 }
