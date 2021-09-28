@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Spotify</title>
+    <title>willtofy® Project</title>
     <link rel="stylesheet" href="./main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
 </head>
 
 <body>
 
-                        <!--MENU-LATERAL-->
+    <!--MENU-LATERAL-->
 
     <aside class="menu-lateral">
         <div class="logo">
@@ -78,7 +82,7 @@
         </div>
     </aside>
 
-                            <!--PLAYER-->
+    <!--PLAYER-->
 
     <div class="player">
         <div class="box_musica-atual">
@@ -123,29 +127,98 @@
         </div>
     </div>
 
-                            <!--HEADER-->
 
-    <header class="header_painel">
-        <div class="header_box1">
-            <div class="header_buttons header_button-previous"><i class="fas fa-chevron-right"></i></div>
-            <div class="header_buttons header_button-next"><i class="fas fa-chevron-right"></i></div>
-        </div>
-        <div class="header_box2">
-            <div class="header_button-upgrade">
-                <span>Faça Upgrade</span>
-            </div>
-            <div class="header_perfil">
-                <div class="avatar">
-                    <i class="fas fa-user-circle"></i>
-                </div>
-                <div class="perfil_usuario">
-                    <span>willfroso</span>
-                </div>
-                <div class="header_button_ver-mais"><i class="fas fa-angle-down"></i></div>
 
+    <!--PAINEL-->
+    <div class="area_painel">
+        <!--HEADER-->
+        <header class="header_painel">
+            <div class="header_box1">
+                <div class="header_buttons header_button-previous"><i class="fas fa-chevron-right"></i></div>
+                <div class="header_buttons header_button-next"><i class="fas fa-chevron-right"></i></div>
             </div>
-        </div>
-    </header>
+            <div class="header_box2">
+                <div class="header_button-upgrade">
+                    <span>Faça Upgrade</span>
+                </div>
+                <div class="header_perfil">
+                    <div class="avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="perfil_usuario">
+                        <span>willfroso</span>
+                    </div>
+                    <div class="header_button_ver-mais"><i class="fas fa-angle-down"></i></div>
+
+                </div>
+            </div>
+        </header>
+
+        <!--------SESSÃO 1------->
+
+        <section class="sessao_titulo_pagina">
+            <span>Boa noite</span>
+        </section>
+        <section class="atalhos-rapidos">
+            <div class="atalhos-rapidos_box">
+                <div class="atalhos-rapidos_img">
+                    <img src="./img/liked-songs-640 (1).png" alt="">
+                </div>
+                <div class="box_atalhos-rapidos_dentro">
+                    <div class="atalhos-rapidos_titulo">Músicas Curtidas</div>
+                    <div class="button_play_playlist"><i class="fas fa-pause"></i></div>
+                </div>
+            </div>
+            <div class="atalhos-rapidos_box">
+                <div class="atalhos-rapidos_img"><img src="./img/default (1).jpg" alt=""></div>
+                <div class="box_atalhos-rapidos_dentro">
+                    <div class="atalhos-rapidos_titulo">Daily Mix 2</div>
+                </div>
+            </div>
+            <div class="atalhos-rapidos_box">
+                <div class="atalhos-rapidos_img"><img src="./img/default (2).jpg" alt=""></div>
+                <div class="box_atalhos-rapidos_dentro">
+
+                    <div class="atalhos-rapidos_titulo">Daily Mix 6</div>
+                </div>
+            </div>
+            <div class="atalhos-rapidos_box">
+                <div class="atalhos-rapidos_img"><img src="./img/default (3).jpg" alt=""></div>
+                <div class="box_atalhos-rapidos_dentro">
+
+                    <div class="atalhos-rapidos_titulo">Daily Mix 3</div>
+                </div>
+            </div>
+            <div class="atalhos-rapidos_box">
+                <div class="atalhos-rapidos_img"><img src="./img/default (4).jpg" alt=""></div>
+                <div class="box_atalhos-rapidos_dentro">
+
+                    <div class="atalhos-rapidos_titulo">Daily Mix 5</div>
+                </div>
+            </div>
+            <div class="atalhos-rapidos_box">
+                <div class="atalhos-rapidos_img"><img src="./img/default (5).jpg" alt=""></div>
+                <div class="box_atalhos-rapidos_dentro">
+                    <div class="atalhos-rapidos_titulo">Radar de novidades</div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--------SESSÃO 2------->
+        <section class="sessao_sub-titulo_pagina">
+            <h1>Seus progamas</h1>
+            <h3>Ver tudo</h3>
+        </section>
+
+
+    </div>
+
+
+
+
+
+
     <script src="./main.js"></script>
 </body>
 
