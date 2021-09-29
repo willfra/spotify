@@ -514,6 +514,8 @@ body {
     min-height: 250px;
     max-width: 185px;
     max-height: 250px;
+    -webkit-box-shadow: -1px 14px 26px -13px rgba(0, 0, 0, 0.62);
+    box-shadow: -1px 14px 26px -13px rgba(0, 0, 0, 0.62);
 }
 .box_seus-programas:hover {
     background: rgba(255, 255, 255, 0.082);
@@ -525,6 +527,8 @@ body {
     border-radius: 15px;
     overflow: hidden;
     margin-bottom: 10px;
+    -webkit-box-shadow: -1px 14px 26px -13px rgba(0, 0, 0, 0.62);
+    box-shadow: -1px 14px 26px -13px rgba(0, 0, 0, 0.62);
 }
 .seus-programas_img img {
   width: 100%;
