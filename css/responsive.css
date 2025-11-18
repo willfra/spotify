@@ -1,0 +1,53 @@
+/* Mobile devices */
+@media (max-width: 767px) {
+    .menu-lateral {
+        display: none; /* Oculta o menu lateral em telas pequenas */
+    }
+
+    .area_painel {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .header_painel {
+        padding: 10px 15px;
+    }
+
+    .header_box2 {
+        display: none; /* Oculta o botão de upgrade e perfil */
+    }
+
+    .atalhos-rapidos {
+        padding: 10px 15px;
+        justify-content: center;
+    }
+
+    .atalhos-rapidos_box {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .sessao_seus-programas {
+        margin-left: 15px;
+        justify-content: center;
+    }
+}
+
+/* Tablet devices */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .menu-lateral {
+        max-width: 200px;
+    }
+
+    .area_painel {
+        width: calc(100% - 200px);
+    }
+
+    .header_painel {
+        padding: 10px 25px;
+    }
+
+    .atalhos-rapidos_box {
+        width: 48%;
+    }
+}
