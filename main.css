@@ -1,6 +1,5 @@
 @import url(./css/spotify-web.css);
 @import url(./css/global.css);
-@import url(./css/responsive.css);
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;500;800&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
 
@@ -205,11 +204,21 @@ body {
 .button_play_pause {
   color: white;
   font-size: 2.5rem;
+  position: relative;
 }
-.fa-pause-circle {
-  position: absolute;
-  margin-left: -40px;
-  opacity: 0;
+
+.button_play_pause .fa-pause-circle {
+    display: none;
+    position: absolute;
+    left: 0;
+}
+
+.button_play_pause.toggled .fa-play-circle {
+    display: none;
+}
+
+.button_play_pause.toggled .fa-pause-circle {
+    display: block;
 }
 
 .buttons-center_2 {
@@ -287,6 +296,12 @@ body {
 }
 
 /*------------------- HEADER -------------------*/
+.hamburguer {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
+}
 .header_painel {
   display: flex;
   position: relative;
@@ -546,3 +561,128 @@ body {
   font-size: 0.8rem;
 }
 
+/* General Responsive Styles */
+.bottom-nav {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #121212;
+    border-top: 1px solid #282828;
+    z-index: 1000;
+}
+
+.bottom-nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 8px 0;
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.bottom-nav__link.active,
+.bottom-nav__link:hover {
+    color: #ffffff;
+}
+
+.bottom-nav__link i {
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+
+/* Mobile devices */
+@media (max-width: 767px) {
+    .menu-lateral {
+        display: none;
+    }
+
+    .menu-lateral--ativo {
+        display: flex !important;
+        position: absolute;
+        height: 100vh;
+    }
+
+    .hamburguer {
+        display: block;
+    }
+
+    .area_painel {
+        width: 100%;
+        margin-left: 0;
+        padding-bottom: 80px; /* Space for bottom nav */
+    }
+
+    .header_painel {
+        padding: 10px 15px;
+    }
+
+    .header_box2 {
+        display: none;
+    }
+
+    .atalhos-rapidos {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+        padding: 10px 15px;
+    }
+
+    .sessao_seus-programas {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+        margin-left: 15px;
+    }
+
+    .player {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .box_musica-atual {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .box_player_buttons-center {
+        width: 100%;
+    }
+
+    .box_player_buttons-right {
+        display: none;
+    }
+
+    .bottom-nav {
+        display: flex;
+    }
+}
+
+/* Tablet devices */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .menu-lateral {
+        max-width: 200px;
+    }
+
+    .area_painel {
+        width: calc(100% - 200px);
+    }
+
+    .header_painel {
+        padding: 10px 25px;
+    }
+
+    .atalhos-rapidos {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .sessao_seus-programas {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
