@@ -3,6 +3,7 @@ var playpause = document.querySelector(".button_play_pause");
 document.addEventListener("DOMContentLoaded", function() {
     const atalhosRapidosContainer = document.querySelector('.atalhos-rapidos');
     const seusProgramasContainer = document.querySelector('.sessao_seus-programas');
+    const menuPlaylistsContainer = document.querySelector('.menu3');
 
     // Function to create playlist items
     function createPlaylistItem(playlist) {
@@ -71,6 +72,13 @@ document.addEventListener("DOMContentLoaded", function() {
         return programBox;
     }
 
+    function createMenuItem(playlist) {
+        const menuItem = document.createElement('li');
+        menuItem.className = 'li_playlists';
+        menuItem.textContent = playlist;
+        return menuItem;
+    }
+
     // Populate playlists
     if (atalhosRapidosContainer) {
         playlists.forEach(playlist => {
@@ -85,19 +93,23 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
+    // Populate menu playlists
+    if (menuPlaylistsContainer) {
+        playlists_menu.forEach(playlist => {
+            menuPlaylistsContainer.appendChild(createMenuItem(playlist));
+        });
+    }
+
     // Player functionality
     if (playpause) {
         playpause.addEventListener("click", function () {
-            const playIcon = playpause.querySelector(".fa-play-circle");
-            const pauseIcon = playpause.querySelector(".fa-pause-circle");
-
-            if (playIcon.style.opacity !== "0") {
-                playIcon.style.opacity = "0";
-                pauseIcon.style.opacity = "1";
-            } else {
-                playIcon.style.opacity = "1";
-                pauseIcon.style.opacity = "0";
-            }
+            playpause.classList.toggle("toggled");
         });
     }
+
+    const hamburguer = document.querySelector(".hamburguer");
+    const menuLateral = document.querySelector(".menu-lateral");
+    hamburguer.addEventListener("click", () => {
+        menuLateral.classList.toggle("menu-lateral--ativo");
+    });
 });

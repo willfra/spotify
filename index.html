@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>willtofy® Project</title>
     <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
@@ -33,50 +32,7 @@
             <li class="menu_li"><i class="fas fa-podcast"></i> Seus episódios</li>
         </ul>
         <hr class="menu-lateral_divisao">
-        <ul class="menu3 menu-lateral_menu">
-            <li class="li_playlists">Lofi Fuits Music 🍉</li>
-            <li class="li_playlists">Minha playlist </li>
-            <li class="li_playlists">Boa vibe</li>
-            <li class="li_playlists">Casamento</li>
-            <li class="li_playlists">Guardioes da Galaxia</li>
-            <li class="li_playlists">Theowback Party</li>
-            <li class="li_playlists">Brisa</li>
-            <li class="li_playlists">Maiores Clássicos Brasileiros</li>
-            <li class="li_playlists">Top Brasil</li>
-            <li class="li_playlists">Dubai - Solberjum</li>
-            <li class="li_playlists">Boas pra...</li>
-            <li class="li_playlists">Curtidas na rádio</li>
-            <li class="li_playlists">Mix de San Joet</li>
-            <li class="li_playlists">Foco no estudo</li>
-            <li class="li_playlists">Motivação</li>
-            <li class="li_playlists">Hits da Internet</li>
-            <li class="li_playlists">Playlist 17</li>
-            <li class="li_playlists">Playlist 18</li>
-            <li class="li_playlists">Playlist 19</li>
-            <li class="li_playlists">Playlist 20</li>
-            <li class="li_playlists">Playlist 21</li>
-            <li class="li_playlists">Playlist 22</li>
-            <li class="li_playlists">Playlist 23</li>
-            <li class="li_playlists">Playlist 24</li>
-            <li class="li_playlists">Playlist 25</li>
-            <li class="li_playlists">Playlist 26</li>
-            <li class="li_playlists">Playlist 27</li>
-            <li class="li_playlists">Playlist 28</li>
-            <li class="li_playlists">Playlist 29</li>
-            <li class="li_playlists">Playlist 30</li>
-            <li class="li_playlists">Playlist 31</li>
-            <li class="li_playlists">Playlist 32</li>
-            <li class="li_playlists">Playlist 33</li>
-            <li class="li_playlists">Playlist 34</li>
-            <li class="li_playlists">Playlist 35</li>
-            <li class="li_playlists">Playlist 36</li>
-            <li class="li_playlists">Playlist 37</li>
-            <li class="li_playlists">Playlist 38</li>
-            <li class="li_playlists">Playlist 39</li>
-            <li class="li_playlists">Playlist 40</li>
-            <li class="li_playlists">Playlist 41</li>
-            <li class="li_playlists">Playlist 42</li>
-        </ul>
+        <ul class="menu3 menu-lateral_menu"></ul>
         <div class="install-app">
             <i class="far fa-arrow-alt-circle-down"></i>
             <span></i> Instalar aplicativo</span>
@@ -102,8 +58,10 @@
             <div class="buttons-center_1">
                 <div class="button_player button_random"><i class="fas fa-random"></i></div>
                 <div class="button_player button_previous"><i class="fas fa-step-forward"></i></div>
-                <div class="button_player button_play_pause"><i class="fas fa-play-circle"><i
-                            class="fas fa-pause-circle"></i></i></div>
+                <div class="button_player button_play_pause">
+                    <i class="fas fa-play-circle"></i>
+                    <i class="fas fa-pause-circle"></i>
+                </div>
                 <div class="button_player button_next"><i class="fas fa-step-forward"></i></div>
                 <div class="button_player button_repeat"><i class="fas fa-redo-alt"></i></div>
             </div>
@@ -134,6 +92,9 @@
     <div class="area_painel">
         <!--HEADER-->
         <header class="header_painel">
+            <div class="hamburguer">
+                <i class="fas fa-bars"></i>
+            </div>
             <div class="header_box1">
                 <div class="header_buttons header_button-previous"><i class="fas fa-chevron-right"></i></div>
                 <div class="header_buttons header_button-next"><i class="fas fa-chevron-right"></i></div>
@@ -174,6 +135,22 @@
 
     <script src="./js/data.js"></script>
     <script src="./main.js"></script>
+
+    <!-- BOTTOM NAVIGATION FOR MOBILE -->
+    <nav class="bottom-nav">
+        <a href="#" class="bottom-nav__link">
+            <i class="fas fa-home"></i>
+            <span>Início</span>
+        </a>
+        <a href="#" class="bottom-nav__link">
+            <i class="fas fa-search"></i>
+            <span>Buscar</span>
+        </a>
+        <a href="#" class="bottom-nav__link">
+            <i class="fas fa-bookmark"></i>
+            <span>Sua Biblioteca</span>
+        </a>
+    </nav>
 </body>
 
 </html>

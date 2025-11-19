@@ -25,6 +25,51 @@ const playlists = [
     }
 ];
 
+const playlists_menu = [
+    "Lofi Fuits Music 🍉",
+    "Minha playlist",
+    "Boa vibe",
+    "Casamento",
+    "Guardioes da Galaxia",
+    "Theowback Party",
+    "Brisa",
+    "Maiores Clássicos Brasileiros",
+    "Top Brasil",
+    "Dubai - Solberjum",
+    "Boas pra...",
+    "Curtidas na rádio",
+    "Mix de San Joet",
+    "Foco no estudo",
+    "Motivação",
+    "Hits da Internet",
+    "Playlist 17",
+    "Playlist 18",
+    "Playlist 19",
+    "Playlist 20",
+    "Playlist 21",
+    "Playlist 22",
+    "Playlist 23",
+    "Playlist 24",
+    "Playlist 25",
+    "Playlist 26",
+    "Playlist 27",
+    "Playlist 28",
+    "Playlist 29",
+    "Playlist 30",
+    "Playlist 31",
+    "Playlist 32",
+    "Playlist 33",
+    "Playlist 34",
+    "Playlist 35",
+    "Playlist 36",
+    "Playlist 37",
+    "Playlist 38",
+    "Playlist 39",
+    "Playlist 40",
+    "Playlist 41",
+    "Playlist 42"
+];
+
 const programs = [
     {
         imgSrc: "./img/1b44bbf39744c6661a516dbb4f1f17790d3aac17.jpg",
